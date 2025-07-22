@@ -20,8 +20,6 @@
             computerMove = 'Scissors';
         }
 
-        console.log(computerMove);
-
         let result = '';
 
         if (computerMove === 'rock') {
@@ -31,6 +29,9 @@
         } else {
             result('You win.');
         }
+
+        alert(`You picked rock. Computer picked ${computerMove}. 
+            ${result}`);
     ">Rock</button>
     <button>Paper</button>
     <button>Scissors</button>
