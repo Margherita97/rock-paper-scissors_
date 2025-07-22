@@ -19,6 +19,18 @@
         } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
             computerMove = 'Scissors';
         }
+
+        console.log(computerMove);
+
+        let result = '';
+
+        if (computerMove === 'rock') {
+            result = 'Tie.';
+        } else if (computerMove === 'paper') {
+            result = 'You lose.';
+        } else {
+            result('You win.');
+        }
     ">Rock</button>
     <button>Paper</button>
     <button>Scissors</button>
