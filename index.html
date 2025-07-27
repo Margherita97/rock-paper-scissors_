@@ -16,6 +16,7 @@
     <button onclick="
         playGame('scissors');
     ">Scissors</button>
+
     <script>
 
         function playGame(playerMove) {
@@ -31,6 +32,7 @@
                 } else if (computerMove === 'paper') {
                     result= 'You win.';
                 }
+
             } else if (playerMove === 'paper') {
                 if (computerMove === 'paper') {
                     result = 'Tie.';
@@ -39,6 +41,7 @@
                 } else if (computerMove === 'rock') {
                     result = 'You win.';
                 }
+                
             } else if (playerMove === 'rock') {
                 if (computerMove === 'rock') {
                     result = 'Tie.';
