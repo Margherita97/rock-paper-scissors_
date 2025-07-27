@@ -58,7 +58,7 @@
                 }
             }
 
-            if (result == 'You win.') {
+            if (result === 'You win.') {
                 score.wins += 1;
             } else if (result === 'You lose.') {
                 score.losses += 1;
@@ -67,7 +67,8 @@
             }
 
             alert(`You picked ${playerMove}. Computer picked ${computerMove}. 
-                ${result}`);
+                ${result}
+                Wins: ${score.wins}; Losses ${score.losses}; Ties ${score.ties}`);
         }
 
         function pickComputerMove() {
